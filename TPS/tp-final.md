@@ -1,5 +1,5 @@
 
-# 📘 Lenguaje **Elysion**
+# 📘 Trabajo práctico final Parseo y Generación de Código
 
 ## 🎯 Objetivo
 **Elysion** es un lenguaje esotérico diseñado con fines didácticos y de análisis formal. A diferencia de otros lenguajes esotéricos minimalistas, **su sintaxis es clara y expresiva**, pensada para ser fácil de entender, leer y extender.
