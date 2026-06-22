@@ -127,50 +127,6 @@ ejecutar_comando("apt update")
 ```
 ---
 
-## 📐 BNF (Fragmento Actualizado)
-```bnf
-<programa> ::= inicio <bloques>* fin
-
-<bloques> ::= <declaracion> | <asignacion> | <condicional> | <bucle> | <funcion> | <llamada> | <io>
-
-<declaracion> ::= <identificador>: <tipo> = <expresion>
-<asignacion> ::= <identificador> = <expresion>
-
-<condicional> ::= si <expresion> { <bloques>* } (sino si <expresion> { <bloques>* })* (sino { <bloques>* })?
-
-<bucle> ::= repetir <identificador> desde <expresion> hasta <expresion> { <bloques>* }
-          | mientras <expresion> { <bloques>* }
-
-<funcion> ::= funcion <identificador>(<parametros>?) : <tipo> { <bloques>* retornar <expresion> }
-
-<io> ::= leer_metricas(<cadena>) | mostrar_estado() | exportar_log(<cadena>) | ejecutar_comando(<cadena>)
-
-<expresion> ::= <expresion> <operador> <expresion>
-              | ( <expresion> )
-              | <valor>
-              | <identificador>
-              | <llamada_funcion>
-
-<valor> ::= <numero> | <cadena> | verdadero | falso | <porcentaje> | <bytes>
-
-<porcentaje> ::= <numero>.<numero>
-<bytes> ::= <numero>
-<segundos> ::= <numero>
-
-<tipo> ::= recurso | porcentaje | bytes | segundos | comando | estado | booleano | entero | texto
-
-<estado> ::= "running" | "stopped" | "degraded" | "down"
-
-<operador> ::= > | < | >= | <= | == | != 
-             | y | o | no
-
-<llamada_funcion> ::= <identificador>(<argumentos>?)
-
-<argumentos> ::= <expresion> (, <argumentos>)*
-
-```
-
----
 
 
 ## 🛠️ Ejemplo de Script de Monitoreo
