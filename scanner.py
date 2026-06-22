@@ -39,16 +39,18 @@ reserved = {
     'formatear_bytes': 'FORMATEAR_BYTES',
     'verificar_disco': 'VERIFICAR_DISCO',
     'generar_reporte_sistema': 'GENERAR_REPORTE_SISTEMA',
-    'mostrar_estado': 'MOSTRAR_ESTADO'
+    'mostrar_estado': 'MOSTRAR_ESTADO',
+    'y': 'AND',
+    'o': 'OR',
+    'no': 'NOT'
 }
 
 # Lista de tokens
 tokens = [
-    'ID', 'NUMERO', 'DECIMAL', 'CADENA', 'COMENTARIO',
+    'ID', 'NUMERO', 'DECIMAL', 'CADENA',
     'MAS', 'MENOS', 'POR', 'DIVIDIDO', 'PORCENTAJE_SIMB',
     'MAYOR', 'MENOR', 'MAYOR_IGUAL', 'MENOR_IGUAL', 
     'IGUAL', 'DIFERENTE', 'ASIGNACION',
-    'AND', 'OR', 'NOT',
     'PAREN_IZQ', 'PAREN_DER', 'LLAVE_IZQ', 'LLAVE_DER',
     'CORCHETE_IZQ', 'CORCHETE_DER', 'COMA', 'PUNTO_COMA',
     'DOS_PUNTOS'
@@ -69,9 +71,6 @@ t_IGUAL = r'=='
 t_DIFERENTE = r'!='
 t_ASIGNACION = r'='
 
-t_AND = r'y'
-t_OR = r'o'
-t_NOT = r'no'
 
 t_PAREN_IZQ = r'\('
 t_PAREN_DER = r'\)'
